@@ -1,3 +1,4 @@
+**Preparation for labs
 
 | LED Color | Supply Voltage | LED current |  LED voltage  | Resistor value |
 |-----------|----------------|-------------|---------------|----------------|
