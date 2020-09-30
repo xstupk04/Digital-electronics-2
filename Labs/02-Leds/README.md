@@ -20,15 +20,27 @@
 |    1      |   Output pin   |
 
  
-|   DDRB    |    PORTB    |     PUD     |   Direction   |internal pull-up resistor|
-|-----------|-------------|-------------|---------------|-------------------------|
-|     0     |     O       |      X      |     input     |           No            |
-|     0     |     1       |      0      |     input     |           yes           |
-|     0     |     1       |      1      |     input     |           No            |
-|     1     |     0       |      X      |     output    |           No            |
-|     1     |     1       |      1      |     output    |           No            |
+|   DDRB    |    PORTB    |     PUD     |   Direction   |internal pull-up resistor|            Descriptiion                 |
+|-----------|-------------|-------------|---------------|-------------------------|-----------------------------------------|
+|     0     |     O       |      X      |     input     |           No            |        Tri-state, high-impedance        |
+|     0     |     1       |      0      |     input     |           yes           |PBx will source current if ext.pulled low|
+|     0     |     1       |      1      |     input     |           No            |        Tri-state, high-impedance        |
+|     1     |     0       |      X      |     output    |           No            |            Output low (sink)            |
+|     1     |     1       |      1      |     output    |           No            |           Output High (source)          | 
 
 
+
+|   Port    |     Pin     |          PUD            |
+|-----------|-------------|-------------------------|
+|     A     |     X       |      X                  |
+|     B     |     0       |      0                  |
+|           |     1       |      1                  |
+|           |     2       |      X                  |
+|           |     3       |      1                  |
+|           |     4       |      1                  |   
+|           |     5       |      1                  | 
+|           |     6       |      1                  |
+|           |     7       |      1                  | 
 
 
 
