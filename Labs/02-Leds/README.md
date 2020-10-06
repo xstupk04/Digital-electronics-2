@@ -2,8 +2,8 @@
 
 | LED Color | Supply Voltage | LED current |  LED voltage  | Resistor value |
 |-----------|----------------|-------------|---------------|----------------|
-|    RED    |       5V       |    20 mA    |      1,7 V    |     660        |
-|    Blue   |       5V       |    20 mA    |       3V      |     100        |
+|    RED    |       5V       |    20 mA    |       2V      |     150        |
+|    Blue   |       5V       |    20 mA    |       4V      |     50         |
 
 
 # PART 2 - Active low and active high LEDs
