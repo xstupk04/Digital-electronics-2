@@ -58,6 +58,8 @@
 |           |     6       |              Yes (Arduino pin -6)                |
 |           |     7       |              Yes (Arduino pin 7)                 | 
 
+![Ledky](https://user-images.githubusercontent.com/60606149/95181690-e829c200-07c3-11eb-9393-1589364e2235.jpg)
+
 
 
 
