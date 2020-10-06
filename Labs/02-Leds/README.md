@@ -30,17 +30,34 @@
 
 
 
-|   Port    |     Pin     |          PUD            |
-|-----------|-------------|-------------------------|
-|     A     |     X       |      X                  |
-|     B     |     0       |      0                  |
-|           |     1       |      1                  |
-|           |     2       |      X                  |
-|           |     3       |      1                  |
-|           |     4       |      1                  |   
-|           |     5       |      1                  | 
-|           |     6       |      1                  |
-|           |     7       |      1                  | 
+|   Port    |     Pin     |                Input/output usage                |
+|-----------|-------------|--------------------------------------------------|
+|     A     |     X       |Microcontroller ATmega328P does not contain port A|
+|     B     |     0       |              Yes (Arduino pin 8)                 |
+|           |     1       |              Yes (Arduino pin -9)                |
+|           |     2       |              Yes (Arduino pin -10)               |
+|           |     3       |              Yes (Arduino pin -11)               |
+|           |     4       |             	Yes (Arduino pin 12)                |   
+|           |     5       |              Yes (Arduino pin 13)                | 
+|           |     6       |                      NO                          |
+|           |     7       |                      NO                          | 
+|     C     |     0       |              Yes (Arduino pin A0)                |
+|           |     1       |              Yes (Arduino pin A1)                |
+|           |     2       |              Yes (Arduino pin A2)                |
+|           |     3       |              Yes (Arduino pin A3)                |
+|           |     4       |             	Yes (Arduino pin A4)                |   
+|           |     5       |              Yes (Arduino pin A5)                | 
+|           |     6       |                      NO                          |
+|           |     7       |                  Doesnt have                     | 
+|     D     |     0       |            Yes (Arduino pin RX<-0)               |
+|           |     1       |            Yes (Arduino pin TX->1)               |
+|           |     2       |              Yes (Arduino pin 2)                 |
+|           |     3       |              Yes (Arduino pin -3)                |
+|           |     4       |             	Yes (Arduino pin 4)                 |   
+|           |     5       |              Yes (Arduino pin -5)                | 
+|           |     6       |              Yes (Arduino pin -6)                |
+|           |     7       |              Yes (Arduino pin 7)                 | 
+
 
 
 
