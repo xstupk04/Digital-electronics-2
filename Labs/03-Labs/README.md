@@ -11,7 +11,7 @@ Fill in the following table and enter the number of bits and numeric range for t
 |   float     |      32        |-3.4E38..3.4E38|Single-precision floating-point |
 |   void      |    no data     |     no data   |no data                         |
 
-```
+```ruby
 #include <avr/io.h>
 
 // Function declaration (prototype)
