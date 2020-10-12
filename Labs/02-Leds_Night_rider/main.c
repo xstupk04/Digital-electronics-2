@@ -77,19 +77,19 @@ int main(void)
 	PORTB = PORTB ^ (1<<LED_03);
 	PORTB = PORTB ^ (1<<LED_04);
 	_delay_ms(BLINK_DELAY);
-	PORTB = PORTB ^ (1<<LED_04);
 	PORTB = PORTB ^ (1<<LED_05);
-	_delay_ms(BLINK_DELAY);
-	PORTB = PORTB ^ (1<<LED_04);
-	PORTB = PORTB ^ (1<<LED_05);
-	_delay_ms(BLINK_DELAY);
-	PORTB = PORTB ^ (1<<LED_03);
 	PORTB = PORTB ^ (1<<LED_04);
 	_delay_ms(BLINK_DELAY);
-	PORTB = PORTB ^ (1<<LED_02);
+	PORTB = PORTB ^ (1<<LED_04);
 	PORTB = PORTB ^ (1<<LED_03);
 	_delay_ms(BLINK_DELAY);
+	PORTB = PORTB ^ (1<<LED_03);
 	PORTB = PORTB ^ (1<<LED_02);
+	_delay_ms(BLINK_DELAY);
+	PORTB = PORTB ^ (1<<LED_02);
+	PORTB = PORTB ^ (1<<LED_01);
+	_delay_ms(BLINK_DELAY);
+	PORTB = PORTB ^ (1<<LED_01);
     }
 }
 
