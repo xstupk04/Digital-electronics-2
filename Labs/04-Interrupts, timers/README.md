@@ -9,3 +9,10 @@ Calculate the overflow times for three Timer/Counter modules that contain ATmega
 | Timer/Counter0  |       8        |  16u |128u | -- |1024u| - - |4096u |16384u|
 | Timer/Counter1  |      16        |4.096m|32.8m| -- |262m | - - |1.0486|4.194 |
 | Timer/Counter2  |       8        |  16u |128u |512u|1024u|2048u|4096u |16384u|  
+
+|     Module      |    Operation   |   I/O registers  |  Bits  |
+|-----------------|----------------|------------------|--------|
+| Timer/Counter0  |       8        |Prescaler 8-bit data value; Overflow interrupt   |128u    |
+| Timer/Counter1  |      16        |4.096m            |32.8m   |
+| Timer/Counter2  |       8        |  16u             |128u    | 
+
