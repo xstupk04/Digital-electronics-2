@@ -12,7 +12,7 @@ Calculate the overflow times for three Timer/Counter modules that contain ATmega
 
 |     Module      |    Operation   |   I/O registers  |  Bits  |
 |-----------------|----------------|------------------|--------|
-| Timer/Counter0  |       8        |Prescaler 8-bit data value; Overflow interrupt   |128u    |
-| Timer/Counter1  |      16        |4.096m            |32.8m   |
-| Timer/Counter2  |       8        |  16u             |128u    | 
+| Timer/Counter0  |Prescaler 8-bit data value; Overflow interrupt enable| | 
+| Timer/Counter1  |Prescaler; 16-bit data value; Overflow interrupt enable|TCCR1B; TCNT1H, TCNT1L, TIMSK1 |CS12, CS11, CS10 (000: stopped, 001: 1, 010: 8, 011: 64, 100: 256, 101: 1024)TCNT1[15:0], TOIE1 (1: enable, 0: disable)|
+| Timer/Counter2  |Prescaler; 8-bit data value; Overflow interrupt enable| |
 
