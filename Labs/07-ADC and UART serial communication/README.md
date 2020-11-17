@@ -1,6 +1,7 @@
 ## Preparation tasks (done before the lab at home)
 
 ![Ledky](https://user-images.githubusercontent.com/60606149/99425832-af712280-2903-11eb-95d5-b65c775a7471.png) 
+
 Use schematic of the and find out the connection of five push buttons: Select, Left, Up, Down, and Right.
 
 
