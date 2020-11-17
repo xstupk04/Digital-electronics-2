@@ -1,6 +1,7 @@
 ## Preparation tasks (done before the lab at home)
 
-Use schematic of the ![Ledky](https://user-images.githubusercontent.com/60606149/99425832-af712280-2903-11eb-95d5-b65c775a7471.png) Use schematic of the and find out the connection of five push buttons: Select, Left, Up, Down, and Right.
+![Ledky](https://user-images.githubusercontent.com/60606149/99425832-af712280-2903-11eb-95d5-b65c775a7471.png) 
+Use schematic of the and find out the connection of five push buttons: Select, Left, Up, Down, and Right.
 
 
 Calculate the ADC values for these voltages according to the following equation if reference is Vref=5V and number of bits for analog to digital conversion is n=10.
