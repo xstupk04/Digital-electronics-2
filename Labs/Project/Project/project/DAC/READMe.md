@@ -10,7 +10,7 @@ Aplikace generátoru analogového signálu využívající 8bitový DAC; několi
 
 Projekt postavený na mikrokontóleru Atmega328p z rodiny AVR. K němuž je připojen LCD displej s řadičem HD44780 pro zobrazení typu posílaného signálu a informace ohledně stisknuté klávesnici. Nastavený typ signálu bude možné nastavit pomocí 4x3 keypadu. Pro převod signálu z digitální hodnoty na analogovou bude využit tzv. 8 bitový žebříkový systém odporů na jehož výstup se připojí osciloskop na kterém se zobrazí průběh signálu. Informace o typu signálu, stisku konkrétního tlačítka si bude možné zjistit pomocí UARTu
 
-## Schéma zapojení
+### Tabulka zapojení
 
    | **Zařízení** | **Port proceosru** | **Popis** |
    | :-: | :-: | :-: |
