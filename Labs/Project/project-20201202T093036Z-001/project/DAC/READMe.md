@@ -3,7 +3,6 @@
 ## Zadání projektu
 Aplikace generátoru analogového signálu využívající 8bitový DAC; několik přednastavených typů signálů; displej; ovládání pomocí klávesnice 4x3; (možnost generování tónu DTMF, Dual-Tone Multiple Frequencies); odesílání zajímavých informací o stavu aplikace na UART.
 
-*Write your text here*
 
 
 ## Popis hardwaru
@@ -35,8 +34,6 @@ Pomocí využité klávesnice lze přednastavit 12 analogových hodnot. Výstup 
 ## Popis programu
 
 ## Video/Animation
-
-*Write your text here*
 
 
 ## Zdroje
