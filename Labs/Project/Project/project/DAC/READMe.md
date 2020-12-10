@@ -32,7 +32,10 @@ Jak ze schématu plyne jedná síť rezistorů pomocí, které jde jednoduše p�
 Pomocí využité klávesnice lze přednastavit 12 analogových hodnot. Výstup klávesnice je přiveden na port C0 mikroprocesoru. Tento port má funkci AD převodníku, kdy v rámci programu rozlišuje stisknuté tlačítko. Každá klávesa kombinuje specifické rezistory s děličem napětí, a tak vytváří specifické napětí na výstupu. S tímto napětím lze určit, zda je aktuálně stisknut jakýkoli a který konkrétní klíč. 
 
 ## Popis programu
-
+Program je postaven na knihovnách ze cvičení- tedy timer.h, která zjednodušuje práci s časovači,gpio.h, jež umí ovládat i/o, lcd.h, která je převyata od Petera Fleuryho
+a umožňující snadnou práci s lcd displejem, uart.h, která je převzata od stejného autora, jako knihovna lcd.h. Navíc využíváme knihovnu math.h pro zpříštupnění matematických operací.
+DAC převodník je založen na stále se inkrementující hodnotě i pomocí interrupt rutiny, která je zpracovávána ve funkci fce. Tato funkce obsahuje 3 různé typy matematických výpočtů aktuálního vzorku pro nastavený průběh. Hodnota je dále filtrována funkcí setByte, která zjišťuje, zda je bit na určité pozici aktivní, nebo ne. Pokud zjistí aktivitu, vydá instrukci pro aktivaci výstupu. ADC interrupt, který je aktivován interruptem timeru1, hlídá hondnotu ADC vstupu z keypadu a nastavuje typy průběhů + DTMF děličku frekvence a dobu příslučného tónu. 
+DTMF je realizováno pomoci funkce GPIO_toggle(), která je aktivována pokaždé, kdy timer2 "dopočítá" do určená hodnoty DTMF hodnoty nastavené keypadem. Zároveň je regulovaná doba znění a to pomocí hodnoty duration. Togglování je totiž zastaveno v moment, kdy je napočítáno do právě hodnoty duration.
 ## Video/Animation
 
 
