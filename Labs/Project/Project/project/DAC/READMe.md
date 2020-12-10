@@ -37,7 +37,7 @@ a umožňující snadnou práci s lcd displejem, uart.h, která je převzata od 
 DAC převodník je založen na stále se inkrementující hodnotě i pomocí interrupt rutiny, která je zpracovávána ve funkci fce. Tato funkce obsahuje 3 různé typy matematických výpočtů aktuálního vzorku pro nastavený průběh. Hodnota je dále filtrována funkcí setByte, která zjišťuje, zda je bit na určité pozici aktivní, nebo ne. Pokud zjistí aktivitu, vydá instrukci pro aktivaci výstupu. ADC interrupt, který je aktivován interruptem timeru1, hlídá hondnotu ADC vstupu z keypadu a nastavuje typy průběhů + DTMF děličku frekvence a dobu příslučného tónu. 
 DTMF je realizováno pomoci funkce GPIO_toggle(), která je aktivována pokaždé, kdy timer2 "dopočítá" do určená hodnoty DTMF hodnoty nastavené keypadem. Zároveň je regulovaná doba znění a to pomocí hodnoty duration. Togglování je totiž zastaveno v moment, kdy je napočítáno do právě hodnoty duration.
 ## Video/Animation
- [Link with simulation!](https://drive.google.com/file/d/1RberoMPwAhWS-ku1HDwhC8BtC2yYz-i1/view?usp=sharing)
+ [Link with simulation](https://drive.google.com/file/d/1RberoMPwAhWS-ku1HDwhC8BtC2yYz-i1/view?usp=sharing)
 
 ## Zdroje
 http://www.avr-asm-tutorial.net/avr_en/apps/key_matrix/keypad/resmatrix/resmatrix.html
