@@ -40,7 +40,7 @@ DTMF je realizováno pomoci funkce GPIO_toggle(), která je aktivována pokažd�
  [Link for video simulation](https://drive.google.com/file/d/1RberoMPwAhWS-ku1HDwhC8BtC2yYz-i1/view?usp=sharing)
 
 ## Zdroje
-### http://www.avr-asm-tutorial.net/avr_en/apps/key_matrix/keypad/resmatrix/resmatrix.html
-### https://www.electronics-tutorials.ws/combination/r-2r-dac.html
-### http://www.peterfleury.epizy.com/?i=1
+#### http://www.avr-asm-tutorial.net/avr_en/apps/key_matrix/keypad/resmatrix/resmatrix.html
+#### https://www.electronics-tutorials.ws/combination/r-2r-dac.html
+#### http://www.peterfleury.epizy.com/?i=1
 
