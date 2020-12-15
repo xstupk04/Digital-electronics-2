@@ -1,4 +1,8 @@
-# R-2R ladder Digital to Analog Converter (DAC)
+# R-2R  Digitální - Analogový převodník (DAC)
+
+## Team members
+Libor Matějek https://github.com/libormatejek/Digital-electronics-2/tree/master/Labs/project  
+Tomáš Stupka https://github.com/xstupk04/Digital-electronics-2/tree/master/Labs/Project/Project/project/DAC
 
 ## Zadání projektu
 Aplikace generátoru analogového signálu využívající 8bitový DAC; několik přednastavených typů signálů; displej; ovládání pomocí klávesnice 4x3; (možnost generování tónu DTMF, Dual-Tone Multiple Frequencies); odesílání zajímavých informací o stavu aplikace na UART.
@@ -6,7 +10,7 @@ Aplikace generátoru analogového signálu využívající 8bitový DAC; několi
 
 
 ## Popis hardwaru
-![Project schedule](https://github.com/libormatejek/Digital-electronics-2/blob/master/Labs/project/Images/schema1.png?raw=true)
+![Project schedule](https://github.com/libormatejek/Digital-electronics-2/blob/master/Labs/project/Images/schema.png?raw=true)
 
 Projekt postavený na mikrokontóleru Atmega328p z rodiny AVR. K němuž je připojen LCD displej s řadičem HD44780 pro zobrazení typu posílaného signálu a informace ohledně stisknuté klávesnici. Nastavený typ signálu bude možné nastavit pomocí 4x3 keypadu. Pro převod signálu z digitální hodnoty na analogovou bude využit 8 bitový tzv. žebříkový systém odporů na jehož výstup se připojí osciloskop na kterém se zobrazí průběh signálu. Hodnota stisku konkrétního tlačítka je vysíláno pomocí UARTu
 
@@ -92,7 +96,16 @@ ISR(TIMER2_OVF_vect)
 ## Video/Animation
  [Link for video simulation of signals](https://drive.google.com/file/d/1RberoMPwAhWS-ku1HDwhC8BtC2yYz-i1/view?usp=sharing)  
  [Link for video simulation of DTMF](https://drive.google.com/file/d/11BdKEo6V2hNEbUpJ4fsnwTo4pGqHie2j/view?usp=sharing)
+ 
+ ## Diskuze
+Úkolem bylo zrealizovat DAC 8-bitový převodník pro přednastavené druhy signálů. Tato část úkolu se nám povedla splnit pomocí matematických funkcí. Metoda je však frekvenčně omezena. Dalším nedostatkem této metody je glitch u trojúhelníkového sígnálu, z důvodu dělení nulou.Tento problém se nám povedlo zminimalizovat.
+Výhodou našeho matematického řešení sígnálů je snadná rozšiřitelnost na vícebitový převodník. Zároveň bylo snadné implementovat změnu frekvence signálu, což je nad rámec zadání.   
+Signály a frekvence jsou voleny za pomocí 3x4 keypadu zapojeném pomocí ADC vstupu mikrokontroleru, zde se nevyskyují žádné problémy. Analogová přiváděná hodnota je zároveň s konverzí na digitální hodnotu vysílána přes UART. Tato aplikace je isnpirováná cvičením. 
+Dalším úkol byla implementace DTMF na již zmíněný keypad. Tato funkce je provedena za pomocí děličky interrupt timeru. DTMF tedy není generován součtem dvou frekvencí, jak říká teorie.
+Zapojení je doplněno o LCD displej, který zobrazuje aktuální generovaný průběh. Displej je programován dle cvičení.(knihovna od Petera Fleuryho)  
 
+
+ 
 ## Zdroje
 1. http://www.avr-asm-tutorial.net/avr_en/apps/key_matrix/keypad/resmatrix/resmatrix.html
 2. https://www.electronics-tutorials.ws/combination/r-2r-dac.html
