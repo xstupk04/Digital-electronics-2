@@ -28,12 +28,12 @@ Projekt postavený na mikrokontóleru Atmega328p z rodiny AVR. K němuž je při
 ## R-2R rezistorová síť 
 ![Project schedule](https://user-images.githubusercontent.com/60606149/101371125-afcd5f80-38aa-11eb-9f3b-5953b6983c53.png)
 
-Jak ze schématu plyne jedná síť rezistorů pomocí, které jde jednoduše převést digitální hodnotu signálu na ekvivalentní analogovou výstup. Rozlišení takovéto sítě je závislé na počtu tzv. „žebříků“ (čím více žebříků, tím vyšší rozlišení). Síť rezistorů není nic jiného než propojení několika odporových děličů napětí za sebou a jejich výstup závisí na přiveděné digitální hodnotě z vstupu (v našem případě generované hodnotě z mikroprocesoru). 
+Jak ze schématu plyne jedná o síť rezistorů pomocí, které jde jednoduše převést digitální hodnotu signálu na ekvivalentní analogovou hodnotu. Rozlišení takovéto sítě je závislé na počtu tzv. „žebříků“ (čím více žebříků, tím vyšší rozlišení). Síť rezistorů není nic jiného než propojení několika odporových děličů napětí za sebou a jejich výstup závisí na přiveděné digitální hodnotě z vstupu (v našem případě generované hodnotě z mikroprocesoru). 
 
 ## 4x3 keypad
 ![Project schedule](https://user-images.githubusercontent.com/60606149/101371116-ae9c3280-38aa-11eb-82f0-7d82470d5ae3.png)
 
-Pomocí využité klávesnice lze přednastavit 12 analogových hodnot. Výstup klávesnice je přiveden na port C0 mikroprocesoru. Tento port má funkci AD převodníku, kdy v rámci programu rozlišuje stisknuté tlačítko. Každá klávesa kombinuje specifické rezistory s děličem napětí, a tak vytváří specifické napětí na výstupu. S tímto napětím lze určit, zda je aktuálně stisknut jakýkoli a který konkrétní klíč. 
+Pomocí využité klávesnice lze přednastavit 12 analogových hodnot. Výstup klávesnice je přiveden na port C0 mikroprocesoru. Tento port má funkci AD převodníku, kdy v rámci programu rozlišuje stisknuté tlačítko. Každá klávesa kombinuje specifické rezistory a tvoří tak děličem napětí, který vytváří napětí na výstupu. S tímto napětím lze určit, zda je aktuálně stisknut konkrétní klíč. 
 
 ## Popis programu
 Program je postaven na knihovnách ze cvičení- tedy timer.h, která zjednodušuje práci s časovači,gpio.h, jež umí ovládat i/o, lcd.h, která je převzata od Petera Fleuryho
