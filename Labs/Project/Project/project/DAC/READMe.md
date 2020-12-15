@@ -29,7 +29,7 @@ Jak ze schématu plyne jedná síť rezistorů pomocí, které jde jednoduše p�
 ## 4x3 keypad
 ![Project schedule](https://user-images.githubusercontent.com/60606149/101371116-ae9c3280-38aa-11eb-82f0-7d82470d5ae3.png)
 
-Pomocí využité klávesnice lze přednastavit 12 analogových hodnot. Výstup klávesnice je přiveden na port C0 mikroprocesoru. Tento port má funkci AD převodníku, kdy v rámci programu rozlišuje stisknuté tlačítko. Každá klávesa kombinuje specifické rezistory s děličem napětí, a tak vytváří specifické napětí na výstupu. S tímto napětím lze určit, zda je aktuálně stisknut jakýkoli a který konkrétní klíč. 
+Pomocí využité klávesnice lze přednastavit 12 analogových hodnot. Výstup klávesnice je přiveden na port C0 mikroprocesoru. Tento port má funkci AD převodníku, kdy v rámci programu rozlišuje stisknuté tlačítko. Každá klávesa kombinuje specifické rezistory s děličem napětí, a tak vytváří specifické napětí na výstupu. S tímto napětím lze určit, zda je aktuálně stisknut který konkrétní klíč (tlačítko). 
 
 ## Popis programu
 Program je postaven na knihovnách ze cvičení- tedy timer.h, která zjednodušuje práci s časovači,gpio.h, jež umí ovládat i/o, lcd.h, která je převyata od Petera Fleuryho
