@@ -8,7 +8,7 @@ Aplikace generátoru analogového signálu využívající 8bitový DAC; několi
 ## Popis hardwaru
 ![Project schedule](https://github.com/libormatejek/Digital-electronics-2/blob/master/Labs/project/Images/schema1.png?raw=true)
 
-Projekt postavený na mikrokontóleru Atmega328p z rodiny AVR. K němuž je připojen LCD displej s řadičem HD44780 pro zobrazení typu posílaného signálu a informace ohledně stisknuté klávesnici. Nastavený typ signálu bude možné nastavit pomocí 4x3 keypadu. Pro převod signálu z digitální hodnoty na analogovou bude využit tzv. 8 bitový žebříkový systém odporů na jehož výstup se připojí osciloskop na kterém se zobrazí průběh signálu. Hodnota stisku konkrétního tlačítka je vysíláno pomocí UARTu
+Projekt postavený na mikrokontóleru Atmega328p z rodiny AVR. K němuž je připojen LCD displej s řadičem HD44780 pro zobrazení typu posílaného signálu a informace ohledně stisknuté klávesnici. Nastavený typ signálu bude možné nastavit pomocí 4x3 keypadu. Pro převod signálu z digitální hodnoty na analogovou bude využit 8 bitový tzv. žebříkový systém odporů na jehož výstup se připojí osciloskop na kterém se zobrazí průběh signálu. Hodnota stisku konkrétního tlačítka je vysíláno pomocí UARTu
 
 ### Tabulka zapojení
 
@@ -94,6 +94,6 @@ ISR(TIMER2_OVF_vect)
  [Link for video simulation of DTMF](https://drive.google.com/file/d/11BdKEo6V2hNEbUpJ4fsnwTo4pGqHie2j/view?usp=sharing)
 
 ## Zdroje
-http://www.avr-asm-tutorial.net/avr_en/apps/key_matrix/keypad/resmatrix/resmatrix.html
-https://www.electronics-tutorials.ws/combination/r-2r-dac.html
-http://www.peterfleury.epizy.com
+1. http://www.avr-asm-tutorial.net/avr_en/apps/key_matrix/keypad/resmatrix/resmatrix.html
+2. https://www.electronics-tutorials.ws/combination/r-2r-dac.html
+3. http://www.peterfleury.epizy.com
