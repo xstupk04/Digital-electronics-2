@@ -2,7 +2,7 @@
 
 ## Team members
 Libor Matějek https://github.com/libormatejek/Digital-electronics-2/tree/master/Labs/project  
-Tomáš Stupka https://github.com/xstupk04/Digital-electronics-2/tree/master/Labs/Project/Project/project/DAC
+Tomáš Stupka https://github.com/xstupk04/Digital-electronics-2/tree/master/Labs/Project/DAC
 
 ## Zadání projektu
 Aplikace generátoru analogového signálu využívající 8bitový DAC; několik přednastavených typů signálů; displej; ovládání pomocí klávesnice 4x3; (možnost generování tónu DTMF, Dual-Tone Multiple Frequencies); odesílání zajímavých informací o stavu aplikace na UART.
